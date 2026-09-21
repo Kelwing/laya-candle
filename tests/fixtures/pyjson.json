@@ -1,0 +1,95 @@
+[
+ {
+  "value": {
+   "from": "user@acme.com",
+   "subject": "Duplicate charge on invoice #4411",
+   "body": "Hi,\nwe were billed twice."
+  },
+  "state": "{\"from\": \"user@acme.com\", \"subject\": \"Duplicate charge on invoice #4411\", \"body\": \"Hi,\\nwe were billed twice.\"}",
+  "ascii": "{\"from\": \"user@acme.com\", \"subject\": \"Duplicate charge on invoice #4411\", \"body\": \"Hi,\\nwe were billed twice.\"}"
+ },
+ {
+  "value": {
+   "n": 1,
+   "f": 1.0,
+   "neg": -0.0,
+   "small": 1e-05,
+   "tiny": 1.2345e-07,
+   "big": 1e+16,
+   "edge": 1000000000000000.0,
+   "pi": 3.141592653589793
+  },
+  "state": "{\"n\": 1, \"f\": 1.0, \"neg\": -0.0, \"small\": 1e-05, \"tiny\": 1.2345e-07, \"big\": 1e+16, \"edge\": 1000000000000000.0, \"pi\": 3.141592653589793}",
+  "ascii": "{\"n\": 1, \"f\": 1.0, \"neg\": -0.0, \"small\": 1e-05, \"tiny\": 1.2345e-07, \"big\": 1e+16, \"edge\": 1000000000000000.0, \"pi\": 3.141592653589793}"
+ },
+ {
+  "value": {
+   "unicode": "मुझसे दो बार शुल्क लिया गया",
+   "emoji": "😀",
+   "quote": "\"q\"",
+   "bs": "a\\b",
+   "ctl": "\u0001\u001f",
+   "tab": "\t"
+  },
+  "state": "{\"unicode\": \"मुझसे दो बार शुल्क लिया गया\", \"emoji\": \"😀\", \"quote\": \"\\\"q\\\"\", \"bs\": \"a\\\\b\", \"ctl\": \"\\u0001\\u001f\", \"tab\": \"\\t\"}",
+  "ascii": "{\"unicode\": \"\\u092e\\u0941\\u091d\\u0938\\u0947 \\u0926\\u094b \\u092c\\u093e\\u0930 \\u0936\\u0941\\u0932\\u094d\\u0915 \\u0932\\u093f\\u092f\\u093e \\u0917\\u092f\\u093e\", \"emoji\": \"\\ud83d\\ude00\", \"quote\": \"\\\"q\\\"\", \"bs\": \"a\\\\b\", \"ctl\": \"\\u0001\\u001f\\u007f\", \"tab\": \"\\t\"}"
+ },
+ {
+  "value": {
+   "nested": {
+    "z": [
+     1,
+     [
+      2,
+      {
+       "y": null
+      }
+     ],
+     {}
+    ],
+    "a": []
+   },
+   "b": true,
+   "c": false
+  },
+  "state": "{\"nested\": {\"z\": [1, [2, {\"y\": null}], {}], \"a\": []}, \"b\": true, \"c\": false}",
+  "ascii": "{\"nested\": {\"z\": [1, [2, {\"y\": null}], {}], \"a\": []}, \"b\": true, \"c\": false}"
+ },
+ {
+  "value": [
+   "turn 1",
+   {
+    "role": "user",
+    "content": "héllo"
+   },
+   2,
+   2.5,
+   null
+  ],
+  "state": "[\"turn 1\", {\"role\": \"user\", \"content\": \"héllo\"}, 2, 2.5, null]",
+  "ascii": "[\"turn 1\", {\"role\": \"user\", \"content\": \"h\\u00e9llo\"}, 2, 2.5, null]"
+ },
+ {
+  "value": {
+   "order": 1,
+   "keeps": 2,
+   "insertion": 3,
+   "aardvark": 0
+  },
+  "state": "{\"order\": 1, \"keeps\": 2, \"insertion\": 3, \"aardvark\": 0}",
+  "ascii": "{\"order\": 1, \"keeps\": 2, \"insertion\": 3, \"aardvark\": 0}"
+ },
+ {
+  "value": {
+   "exp": 1.2345678901234568e+17,
+   "half": 0.5,
+   "third": 0.3333333333333333,
+   "hundred": 100.0,
+   "k": 1000.0,
+   "milli": 0.001,
+   "tenth": 0.0001
+  },
+  "state": "{\"exp\": 1.2345678901234568e+17, \"half\": 0.5, \"third\": 0.3333333333333333, \"hundred\": 100.0, \"k\": 1000.0, \"milli\": 0.001, \"tenth\": 0.0001}",
+  "ascii": "{\"exp\": 1.2345678901234568e+17, \"half\": 0.5, \"third\": 0.3333333333333333, \"hundred\": 100.0, \"k\": 1000.0, \"milli\": 0.001, \"tenth\": 0.0001}"
+ }
+]

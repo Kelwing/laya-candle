@@ -1,0 +1,2393 @@
+{
+ "analyse": [
+  {
+   "name": "english_email",
+   "state": {
+    "from": "user@acme.com",
+    "subject": "Duplicate charge",
+    "body": "Hi, we were billed twice for March. Please refund the duplicate today or we will cancel our plan."
+   },
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "en",
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "english_short",
+   "state": "Refund me now",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": null,
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "english_terse",
+   "state": "ok thanks bye now",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": null,
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "hindi",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "analyse": {
+    "script": "devanagari",
+    "script_profile": {
+     "devanagari": 1.0
+    },
+    "language": null,
+    "is_english": false,
+    "non_latin_fraction": 1.0
+   }
+  },
+  {
+   "name": "german",
+   "state": "Mein Konto wurde zweimal belastet und ich möchte das Geld zurück, bitte.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "de",
+    "is_english": false,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "german_short",
+   "state": "Mein Konto wurde belastet",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": null,
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "french",
+   "state": "Bonjour, nous avons été facturés deux fois pour le mois de mars et nous voulons un remboursement.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "fr",
+    "is_english": false,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "spanish",
+   "state": "Hola, se nos ha cobrado dos veces por el mes de marzo y queremos un reembolso por favor.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "es",
+    "is_english": false,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "portuguese",
+   "state": "Olá, fomos cobrados duas vezes pelo mês de março e queremos um reembolso, por favor.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "pt",
+    "is_english": false,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "italian",
+   "state": "Ciao, siamo stati addebitati due volte per il mese di marzo e vogliamo un rimborso.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "it",
+    "is_english": false,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "dutch",
+   "state": "Hallo, we zijn twee keer gefactureerd voor de maand maart en we willen een terugbetaling.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "en",
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "mixed_latin_cyrillic",
+   "state": "Please refund: Мне дважды выставили счет за март.",
+   "analyse": {
+    "script": "cyrillic",
+    "script_profile": {
+     "latin": 0.3,
+     "cyrillic": 0.7
+    },
+    "language": null,
+    "is_english": false,
+    "non_latin_fraction": 0.7
+   }
+  },
+  {
+   "name": "mostly_english_with_han",
+   "state": "Order 8812 delayed 请退款 thanks",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 0.8571428571428571,
+     "han": 0.14285714285714285
+    },
+    "language": null,
+    "is_english": true,
+    "non_latin_fraction": 0.1429
+   }
+  },
+  {
+   "name": "japanese",
+   "state": "3月に二重請求されました。返金をお願いします。",
+   "analyse": {
+    "script": "kana",
+    "script_profile": {
+     "han": 0.4,
+     "kana": 0.6
+    },
+    "language": null,
+    "is_english": false,
+    "non_latin_fraction": 1.0
+   }
+  },
+  {
+   "name": "korean",
+   "state": "3월에 이중 청구되었습니다. 환불해 주세요.",
+   "analyse": {
+    "script": "hangul",
+    "script_profile": {
+     "hangul": 1.0
+    },
+    "language": null,
+    "is_english": false,
+    "non_latin_fraction": 1.0
+   }
+  },
+  {
+   "name": "arabic",
+   "state": "تم تحصيل الرسوم مني مرتين، يرجى رد المبلغ.",
+   "analyse": {
+    "script": "arabic",
+    "script_profile": {
+     "arabic": 1.0
+    },
+    "language": null,
+    "is_english": false,
+    "non_latin_fraction": 1.0
+   }
+  },
+  {
+   "name": "greek",
+   "state": "Χρεώθηκα δύο φορές, παρακαλώ επιστρέψτε τα χρήματα.",
+   "analyse": {
+    "script": "greek",
+    "script_profile": {
+     "greek": 1.0
+    },
+    "language": null,
+    "is_english": false,
+    "non_latin_fraction": 1.0
+   }
+  },
+  {
+   "name": "thai",
+   "state": "ฉันถูกเรียกเก็บเงินสองครั้ง กรุณาคืนเงิน",
+   "analyse": {
+    "script": "thai",
+    "script_profile": {
+     "thai": 1.0
+    },
+    "language": null,
+    "is_english": false,
+    "non_latin_fraction": 1.0
+   }
+  },
+  {
+   "name": "hebrew",
+   "state": "חויבתי פעמיים, אנא החזירו את הכסף.",
+   "analyse": {
+    "script": "hebrew",
+    "script_profile": {
+     "hebrew": 1.0
+    },
+    "language": null,
+    "is_english": false,
+    "non_latin_fraction": 1.0
+   }
+  },
+  {
+   "name": "khmer",
+   "state": "ខ្ញុំត្រូវបានគិតថ្លៃពីរដង សូមសងប្រាក់វិញ។",
+   "analyse": {
+    "script": "khmer",
+    "script_profile": {
+     "khmer": 1.0
+    },
+    "language": null,
+    "is_english": false,
+    "non_latin_fraction": 1.0
+   }
+  },
+  {
+   "name": "vietnamese",
+   "state": "Tôi đã bị tính phí hai lần, vui lòng hoàn tiền cho tôi.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "fr",
+    "is_english": false,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "turkish",
+   "state": "Benden iki kez ücret alındı, lütfen parayı iade edin.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "fr",
+    "is_english": false,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "polish",
+   "state": "Zostałem obciążony dwukrotnie, proszę o zwrot pieniędzy.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": null,
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "digits_only",
+   "state": "4411 #8812 --- 2026",
+   "analyse": {
+    "script": "unknown",
+    "script_profile": {},
+    "language": null,
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "empty",
+   "state": "",
+   "analyse": {
+    "script": "unknown",
+    "script_profile": {},
+    "language": null,
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "json_nested",
+   "state": {
+    "ticket": {
+     "id": 5531,
+     "messages": [
+      {
+       "role": "user",
+       "text": "Мой заказ опаздывает"
+      },
+      {
+       "role": "agent",
+       "text": "Checking"
+      }
+     ]
+    }
+   },
+   "analyse": {
+    "script": "cyrillic",
+    "script_profile": {
+     "latin": 0.4857142857142857,
+     "cyrillic": 0.5142857142857142
+    },
+    "language": null,
+    "is_english": false,
+    "non_latin_fraction": 0.5143
+   }
+  },
+  {
+   "name": "json_deep",
+   "state": {
+    "a": {
+     "b": {
+      "c": {
+       "d": {
+        "e": {
+         "f": {
+          "g": {
+           "h": "мир"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "note": "hello there friend"
+   },
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": null,
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "list_state",
+   "state": [
+    "Ich habe eine Frage zu meiner Rechnung.",
+    "Danke!"
+   ],
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "de",
+    "is_english": false,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "accents_english",
+   "state": "The café's naïve résumé was a cliché, but the crème brûlée was fine.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "en",
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "long_english",
+   "state": "The shipment for order 0 is late and the customer wants a refund. The shipment for order 1 is late and the customer wants a refund. The shipment for order 2 is late and the customer wants a refund. The shipment for order 3 is late and the customer wants a refund. The shipment for order 4 is late and the customer wants a refund. The shipment for order 5 is late and the customer wants a refund. The shipment for order 6 is late and the customer wants a refund. The shipment for order 7 is late and the customer wants a refund. The shipment for order 8 is late and the customer wants a refund. The shipment for order 9 is late and the customer wants a refund. The shipment for order 10 is late and the customer wants a refund. The shipment for order 11 is late and the customer wants a refund. The shipment for order 12 is late and the customer wants a refund. The shipment for order 13 is late and the customer wants a refund. The shipment for order 14 is late and the customer wants a refund. The shipment for order 15 is late and the customer wants a refund. The shipment for order 16 is late and the customer wants a refund. The shipment for order 17 is late and the customer wants a refund. The shipment for order 18 is late and the customer wants a refund. The shipment for order 19 is late and the customer wants a refund. The shipment for order 20 is late and the customer wants a refund. The shipment for order 21 is late and the customer wants a refund. The shipment for order 22 is late and the customer wants a refund. The shipment for order 23 is late and the customer wants a refund. The shipment for order 24 is late and the customer wants a refund. The shipment for order 25 is late and the customer wants a refund. The shipment for order 26 is late and the customer wants a refund. The shipment for order 27 is late and the customer wants a refund. The shipment for order 28 is late and the customer wants a refund. The shipment for order 29 is late and the customer wants a refund. The shipment for order 30 is late and the customer wants a refund. The shipment for order 31 is late and the customer wants a refund. The shipment for order 32 is late and the customer wants a refund. The shipment for order 33 is late and the customer wants a refund. The shipment for order 34 is late and the customer wants a refund. The shipment for order 35 is late and the customer wants a refund. The shipment for order 36 is late and the customer wants a refund. The shipment for order 37 is late and the customer wants a refund. The shipment for order 38 is late and the customer wants a refund. The shipment for order 39 is late and the customer wants a refund. The shipment for order 40 is late and the customer wants a refund. The shipment for order 41 is late and the customer wants a refund. The shipment for order 42 is late and the customer wants a refund. The shipment for order 43 is late and the customer wants a refund. The shipment for order 44 is late and the customer wants a refund. The shipment for order 45 is late and the customer wants a refund. The shipment for order 46 is late and the customer wants a refund. The shipment for order 47 is late and the customer wants a refund. The shipment for order 48 is late and the customer wants a refund. The shipment for order 49 is late and the customer wants a refund. The shipment for order 50 is late and the customer wants a refund. The shipment for order 51 is late and the customer wants a refund. The shipment for order 52 is late and the customer wants a refund. The shipment for order 53 is late and the customer wants a refund. The shipment for order 54 is late and the customer wants a refund. The shipment for order 55 is late and the customer wants a refund. The shipment for order 56 is late and the customer wants a refund. The shipment for order 57 is late and the customer wants a refund. The shipment for order 58 is late and the customer wants a refund. The shipment for order 59 is late and the customer wants a refund. The shipment for order 60 is late and the customer wants a refund. The shipment for order 61 is late and the customer wants a refund. The shipment for order 62 is late and the customer wants a refund. The shipment for order 63 is late and the customer wants a refund. The shipment for order 64 is late and the customer wants a refund. The shipment for order 65 is late and the customer wants a refund. The shipment for order 66 is late and the customer wants a refund. The shipment for order 67 is late and the customer wants a refund. The shipment for order 68 is late and the customer wants a refund. The shipment for order 69 is late and the customer wants a refund. The shipment for order 70 is late and the customer wants a refund. The shipment for order 71 is late and the customer wants a refund. The shipment for order 72 is late and the customer wants a refund. The shipment for order 73 is late and the customer wants a refund. The shipment for order 74 is late and the customer wants a refund. The shipment for order 75 is late and the customer wants a refund. The shipment for order 76 is late and the customer wants a refund. The shipment for order 77 is late and the customer wants a refund. The shipment for order 78 is late and the customer wants a refund. The shipment for order 79 is late and the customer wants a refund. The shipment for order 80 is late and the customer wants a refund. The shipment for order 81 is late and the customer wants a refund. The shipment for order 82 is late and the customer wants a refund. The shipment for order 83 is late and the customer wants a refund. The shipment for order 84 is late and the customer wants a refund. The shipment for order 85 is late and the customer wants a refund. The shipment for order 86 is late and the customer wants a refund. The shipment for order 87 is late and the customer wants a refund. The shipment for order 88 is late and the customer wants a refund. The shipment for order 89 is late and the customer wants a refund. The shipment for order 90 is late and the customer wants a refund. The shipment for order 91 is late and the customer wants a refund. The shipment for order 92 is late and the customer wants a refund. The shipment for order 93 is late and the customer wants a refund. The shipment for order 94 is late and the customer wants a refund. The shipment for order 95 is late and the customer wants a refund. The shipment for order 96 is late and the customer wants a refund. The shipment for order 97 is late and the customer wants a refund. The shipment for order 98 is late and the customer wants a refund. The shipment for order 99 is late and the customer wants a refund. The shipment for order 100 is late and the customer wants a refund. The shipment for order 101 is late and the customer wants a refund. The shipment for order 102 is late and the customer wants a refund. The shipment for order 103 is late and the customer wants a refund. The shipment for order 104 is late and the customer wants a refund. The shipment for order 105 is late and the customer wants a refund. The shipment for order 106 is late and the customer wants a refund. The shipment for order 107 is late and the customer wants a refund. The shipment for order 108 is late and the customer wants a refund. The shipment for order 109 is late and the customer wants a refund. The shipment for order 110 is late and the customer wants a refund. The shipment for order 111 is late and the customer wants a refund. The shipment for order 112 is late and the customer wants a refund. The shipment for order 113 is late and the customer wants a refund. The shipment for order 114 is late and the customer wants a refund. The shipment for order 115 is late and the customer wants a refund. The shipment for order 116 is late and the customer wants a refund. The shipment for order 117 is late and the customer wants a refund. The shipment for order 118 is late and the customer wants a refund. The shipment for order 119 is late and the customer wants a refund. The shipment for order 120 is late and the customer wants a refund. The shipment for order 121 is late and the customer wants a refund. The shipment for order 122 is late and the customer wants a refund. The shipment for order 123 is late and the customer wants a refund. The shipment for order 124 is late and the customer wants a refund. The shipment for order 125 is late and the customer wants a refund. The shipment for order 126 is late and the customer wants a refund. The shipment for order 127 is late and the customer wants a refund. The shipment for order 128 is late and the customer wants a refund. The shipment for order 129 is late and the customer wants a refund. The shipment for order 130 is late and the customer wants a refund. The shipment for order 131 is late and the customer wants a refund. The shipment for order 132 is late and the customer wants a refund. The shipment for order 133 is late and the customer wants a refund. The shipment for order 134 is late and the customer wants a refund. The shipment for order 135 is late and the customer wants a refund. The shipment for order 136 is late and the customer wants a refund. The shipment for order 137 is late and the customer wants a refund. The shipment for order 138 is late and the customer wants a refund. The shipment for order 139 is late and the customer wants a refund. The shipment for order 140 is late and the customer wants a refund. The shipment for order 141 is late and the customer wants a refund. The shipment for order 142 is late and the customer wants a refund. The shipment for order 143 is late and the customer wants a refund. The shipment for order 144 is late and the customer wants a refund. The shipment for order 145 is late and the customer wants a refund. The shipment for order 146 is late and the customer wants a refund. The shipment for order 147 is late and the customer wants a refund. The shipment for order 148 is late and the customer wants a refund. The shipment for order 149 is late and the customer wants a refund. The shipment for order 150 is late and the customer wants a refund. The shipment for order 151 is late and the customer wants a refund. The shipment for order 152 is late and the customer wants a refund. The shipment for order 153 is late and the customer wants a refund. The shipment for order 154 is late and the customer wants a refund. The shipment for order 155 is late and the customer wants a refund. The shipment for order 156 is late and the customer wants a refund. The shipment for order 157 is late and the customer wants a refund. The shipment for order 158 is late and the customer wants a refund. The shipment for order 159 is late and the customer wants a refund. The shipment for order 160 is late and the customer wants a refund. The shipment for order 161 is late and the customer wants a refund. The shipment for order 162 is late and the customer wants a refund. The shipment for order 163 is late and the customer wants a refund. The shipment for order 164 is late and the customer wants a refund. The shipment for order 165 is late and the customer wants a refund. The shipment for order 166 is late and the customer wants a refund. The shipment for order 167 is late and the customer wants a refund. The shipment for order 168 is late and the customer wants a refund. The shipment for order 169 is late and the customer wants a refund. The shipment for order 170 is late and the customer wants a refund. The shipment for order 171 is late and the customer wants a refund. The shipment for order 172 is late and the customer wants a refund. The shipment for order 173 is late and the customer wants a refund. The shipment for order 174 is late and the customer wants a refund. The shipment for order 175 is late and the customer wants a refund. The shipment for order 176 is late and the customer wants a refund. The shipment for order 177 is late and the customer wants a refund. The shipment for order 178 is late and the customer wants a refund. The shipment for order 179 is late and the customer wants a refund. The shipment for order 180 is late and the customer wants a refund. The shipment for order 181 is late and the customer wants a refund. The shipment for order 182 is late and the customer wants a refund. The shipment for order 183 is late and the customer wants a refund. The shipment for order 184 is late and the customer wants a refund. The shipment for order 185 is late and the customer wants a refund. The shipment for order 186 is late and the customer wants a refund. The shipment for order 187 is late and the customer wants a refund. The shipment for order 188 is late and the customer wants a refund. The shipment for order 189 is late and the customer wants a refund. The shipment for order 190 is late and the customer wants a refund. The shipment for order 191 is late and the customer wants a refund. The shipment for order 192 is late and the customer wants a refund. The shipment for order 193 is late and the customer wants a refund. The shipment for order 194 is late and the customer wants a refund. The shipment for order 195 is late and the customer wants a refund. The shipment for order 196 is late and the customer wants a refund. The shipment for order 197 is late and the customer wants a refund. The shipment for order 198 is late and the customer wants a refund. The shipment for order 199 is late and the customer wants a refund. The shipment for order 200 is late and the customer wants a refund. The shipment for order 201 is late and the customer wants a refund. The shipment for order 202 is late and the customer wants a refund. The shipment for order 203 is late and the customer wants a refund. The shipment for order 204 is late and the customer wants a refund. The shipment for order 205 is late and the customer wants a refund. The shipment for order 206 is late and the customer wants a refund. The shipment for order 207 is late and the customer wants a refund. The shipment for order 208 is late and the customer wants a refund. The shipment for order 209 is late and the customer wants a refund. The shipment for order 210 is late and the customer wants a refund. The shipment for order 211 is late and the customer wants a refund. The shipment for order 212 is late and the customer wants a refund. The shipment for order 213 is late and the customer wants a refund. The shipment for order 214 is late and the customer wants a refund. The shipment for order 215 is late and the customer wants a refund. The shipment for order 216 is late and the customer wants a refund. The shipment for order 217 is late and the customer wants a refund. The shipment for order 218 is late and the customer wants a refund. The shipment for order 219 is late and the customer wants a refund. The shipment for order 220 is late and the customer wants a refund. The shipment for order 221 is late and the customer wants a refund. The shipment for order 222 is late and the customer wants a refund. The shipment for order 223 is late and the customer wants a refund. The shipment for order 224 is late and the customer wants a refund. The shipment for order 225 is late and the customer wants a refund. The shipment for order 226 is late and the customer wants a refund. The shipment for order 227 is late and the customer wants a refund. The shipment for order 228 is late and the customer wants a refund. The shipment for order 229 is late and the customer wants a refund. The shipment for order 230 is late and the customer wants a refund. The shipment for order 231 is late and the customer wants a refund. The shipment for order 232 is late and the customer wants a refund. The shipment for order 233 is late and the customer wants a refund. The shipment for order 234 is late and the customer wants a refund. The shipment for order 235 is late and the customer wants a refund. The shipment for order 236 is late and the customer wants a refund. The shipment for order 237 is late and the customer wants a refund. The shipment for order 238 is late and the customer wants a refund. The shipment for order 239 is late and the customer wants a refund. The shipment for order 240 is late and the customer wants a refund. The shipment for order 241 is late and the customer wants a refund. The shipment for order 242 is late and the customer wants a refund. The shipment for order 243 is late and the customer wants a refund. The shipment for order 244 is late and the customer wants a refund. The shipment for order 245 is late and the customer wants a refund. The shipment for order 246 is late and the customer wants a refund. The shipment for order 247 is late and the customer wants a refund. The shipment for order 248 is late and the customer wants a refund. The shipment for order 249 is late and the customer wants a refund. The shipment for order 250 is late and the customer wants a refund. The shipment for order 251 is late and the customer wants a refund. The shipment for order 252 is late and the customer wants a refund. The shipment for order 253 is late and the customer wants a refund. The shipment for order 254 is late and the customer wants a refund. The shipment for order 255 is late and the customer wants a refund. The shipment for order 256 is late and the customer wants a refund. The shipment for order 257 is late and the customer wants a refund. The shipment for order 258 is late and the customer wants a refund. The shipment for order 259 is late and the customer wants a refund. The shipment for order 260 is late and the customer wants a refund. The shipment for order 261 is late and the customer wants a refund. The shipment for order 262 is late and the customer wants a refund. The shipment for order 263 is late and the customer wants a refund. The shipment for order 264 is late and the customer wants a refund. The shipment for order 265 is late and the customer wants a refund. The shipment for order 266 is late and the customer wants a refund. The shipment for order 267 is late and the customer wants a refund. The shipment for order 268 is late and the customer wants a refund. The shipment for order 269 is late and the customer wants a refund. The shipment for order 270 is late and the customer wants a refund. The shipment for order 271 is late and the customer wants a refund. The shipment for order 272 is late and the customer wants a refund. The shipment for order 273 is late and the customer wants a refund. The shipment for order 274 is late and the customer wants a refund. The shipment for order 275 is late and the customer wants a refund. The shipment for order 276 is late and the customer wants a refund. The shipment for order 277 is late and the customer wants a refund. The shipment for order 278 is late and the customer wants a refund. The shipment for order 279 is late and the customer wants a refund. The shipment for order 280 is late and the customer wants a refund. The shipment for order 281 is late and the customer wants a refund. The shipment for order 282 is late and the customer wants a refund. The shipment for order 283 is late and the customer wants a refund. The shipment for order 284 is late and the customer wants a refund. The shipment for order 285 is late and the customer wants a refund. The shipment for order 286 is late and the customer wants a refund. The shipment for order 287 is late and the customer wants a refund. The shipment for order 288 is late and the customer wants a refund. The shipment for order 289 is late and the customer wants a refund. The shipment for order 290 is late and the customer wants a refund. The shipment for order 291 is late and the customer wants a refund. The shipment for order 292 is late and the customer wants a refund. The shipment for order 293 is late and the customer wants a refund. The shipment for order 294 is late and the customer wants a refund. The shipment for order 295 is late and the customer wants a refund. The shipment for order 296 is late and the customer wants a refund. The shipment for order 297 is late and the customer wants a refund. The shipment for order 298 is late and the customer wants a refund. The shipment for order 299 is late and the customer wants a refund.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "en",
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "emoji_only",
+   "state": "😀🎉👍",
+   "analyse": {
+    "script": "unknown",
+    "script_profile": {},
+    "language": null,
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  },
+  {
+   "name": "typed_workflow_ids",
+   "state": "Invoice 4411 does not match the purchase order and looks like a duplicate.",
+   "analyse": {
+    "script": "latin",
+    "script_profile": {
+     "latin": 1.0
+    },
+    "language": "en",
+    "is_english": true,
+    "non_latin_fraction": 0.0
+   }
+  }
+ ],
+ "routes": [
+  {
+   "name": "english_email",
+   "state": {
+    "from": "user@acme.com",
+    "subject": "Duplicate charge",
+    "body": "Hi, we were billed twice for March. Please refund the duplicate today or we will cancel our plan."
+   },
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "en",
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "english_short",
+   "state": "Refund me now",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": null,
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "english_terse",
+   "state": "ok thanks bye now",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": null,
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "hindi",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "devanagari",
+     "script_profile": {
+      "devanagari": 1.0
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 1.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "german",
+   "state": "Mein Konto wurde zweimal belastet und ich möchte das Geld zurück, bitte.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "Latin script but language looks like 'de', not English",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "de",
+     "is_english": false,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "german_short",
+   "state": "Mein Konto wurde belastet",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": null,
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "french",
+   "state": "Bonjour, nous avons été facturés deux fois pour le mois de mars et nous voulons un remboursement.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "Latin script but language looks like 'fr', not English",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "fr",
+     "is_english": false,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "spanish",
+   "state": "Hola, se nos ha cobrado dos veces por el mes de marzo y queremos un reembolso por favor.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "Latin script but language looks like 'es', not English",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "es",
+     "is_english": false,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "portuguese",
+   "state": "Olá, fomos cobrados duas vezes pelo mês de março e queremos um reembolso, por favor.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "Latin script but language looks like 'pt', not English",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "pt",
+     "is_english": false,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "italian",
+   "state": "Ciao, siamo stati addebitati due volte per il mese di marzo e vogliamo un rimborso.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "Latin script but language looks like 'it', not English",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "it",
+     "is_english": false,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "dutch",
+   "state": "Hallo, we zijn twee keer gefactureerd voor de maand maart en we willen een terugbetaling.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "en",
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "mixed_latin_cyrillic",
+   "state": "Please refund: Мне дважды выставили счет за март.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (cyrillic, 70% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "cyrillic",
+     "script_profile": {
+      "latin": 0.3,
+      "cyrillic": 0.7
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 0.7
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "mostly_english_with_han",
+   "state": "Order 8812 delayed 请退款 thanks",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 0.8571428571428571,
+      "han": 0.14285714285714285
+     },
+     "language": null,
+     "is_english": true,
+     "non_latin_fraction": 0.1429
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "japanese",
+   "state": "3月に二重請求されました。返金をお願いします。",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (kana, 100% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "kana",
+     "script_profile": {
+      "han": 0.4,
+      "kana": 0.6
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 1.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "korean",
+   "state": "3월에 이중 청구되었습니다. 환불해 주세요.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (hangul, 100% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "hangul",
+     "script_profile": {
+      "hangul": 1.0
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 1.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "arabic",
+   "state": "تم تحصيل الرسوم مني مرتين، يرجى رد المبلغ.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (arabic, 100% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "arabic",
+     "script_profile": {
+      "arabic": 1.0
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 1.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "greek",
+   "state": "Χρεώθηκα δύο φορές, παρακαλώ επιστρέψτε τα χρήματα.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (greek, 100% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "greek",
+     "script_profile": {
+      "greek": 1.0
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 1.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "thai",
+   "state": "ฉันถูกเรียกเก็บเงินสองครั้ง กรุณาคืนเงิน",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (thai, 100% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "thai",
+     "script_profile": {
+      "thai": 1.0
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 1.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "hebrew",
+   "state": "חויבתי פעמיים, אנא החזירו את הכסף.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (hebrew, 100% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "hebrew",
+     "script_profile": {
+      "hebrew": 1.0
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 1.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "khmer",
+   "state": "ខ្ញុំត្រូវបានគិតថ្លៃពីរដង សូមសងប្រាក់វិញ។",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (khmer, 100% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "khmer",
+     "script_profile": {
+      "khmer": 1.0
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 1.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "vietnamese",
+   "state": "Tôi đã bị tính phí hai lần, vui lòng hoàn tiền cho tôi.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "Latin script but language looks like 'fr', not English",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "fr",
+     "is_english": false,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "turkish",
+   "state": "Benden iki kez ücret alındı, lütfen parayı iade edin.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "Latin script but language looks like 'fr', not English",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "fr",
+     "is_english": false,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "polish",
+   "state": "Zostałem obciążony dwukrotnie, proszę o zwrot pieniędzy.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": null,
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "digits_only",
+   "state": "4411 #8812 --- 2026",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "no letters detected in state; using default (english)",
+    "detection": {
+     "script": "unknown",
+     "script_profile": {},
+     "language": null,
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "empty",
+   "state": "",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "no letters detected in state; using default (english)",
+    "detection": {
+     "script": "unknown",
+     "script_profile": {},
+     "language": null,
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "json_nested",
+   "state": {
+    "ticket": {
+     "id": 5531,
+     "messages": [
+      {
+       "role": "user",
+       "text": "Мой заказ опаздывает"
+      },
+      {
+       "role": "agent",
+       "text": "Checking"
+      }
+     ]
+    }
+   },
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (cyrillic, 51% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "cyrillic",
+     "script_profile": {
+      "latin": 0.4857142857142857,
+      "cyrillic": 0.5142857142857142
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 0.5143
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "json_deep",
+   "state": {
+    "a": {
+     "b": {
+      "c": {
+       "d": {
+        "e": {
+         "f": {
+          "g": {
+           "h": "мир"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "note": "hello there friend"
+   },
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": null,
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "list_state",
+   "state": [
+    "Ich habe eine Frage zu meiner Rechnung.",
+    "Danke!"
+   ],
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "Latin script but language looks like 'de', not English",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "de",
+     "is_english": false,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "accents_english",
+   "state": "The café's naïve résumé was a cliché, but the crème brûlée was fine.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "en",
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "long_english",
+   "state": "The shipment for order 0 is late and the customer wants a refund. The shipment for order 1 is late and the customer wants a refund. The shipment for order 2 is late and the customer wants a refund. The shipment for order 3 is late and the customer wants a refund. The shipment for order 4 is late and the customer wants a refund. The shipment for order 5 is late and the customer wants a refund. The shipment for order 6 is late and the customer wants a refund. The shipment for order 7 is late and the customer wants a refund. The shipment for order 8 is late and the customer wants a refund. The shipment for order 9 is late and the customer wants a refund. The shipment for order 10 is late and the customer wants a refund. The shipment for order 11 is late and the customer wants a refund. The shipment for order 12 is late and the customer wants a refund. The shipment for order 13 is late and the customer wants a refund. The shipment for order 14 is late and the customer wants a refund. The shipment for order 15 is late and the customer wants a refund. The shipment for order 16 is late and the customer wants a refund. The shipment for order 17 is late and the customer wants a refund. The shipment for order 18 is late and the customer wants a refund. The shipment for order 19 is late and the customer wants a refund. The shipment for order 20 is late and the customer wants a refund. The shipment for order 21 is late and the customer wants a refund. The shipment for order 22 is late and the customer wants a refund. The shipment for order 23 is late and the customer wants a refund. The shipment for order 24 is late and the customer wants a refund. The shipment for order 25 is late and the customer wants a refund. The shipment for order 26 is late and the customer wants a refund. The shipment for order 27 is late and the customer wants a refund. The shipment for order 28 is late and the customer wants a refund. The shipment for order 29 is late and the customer wants a refund. The shipment for order 30 is late and the customer wants a refund. The shipment for order 31 is late and the customer wants a refund. The shipment for order 32 is late and the customer wants a refund. The shipment for order 33 is late and the customer wants a refund. The shipment for order 34 is late and the customer wants a refund. The shipment for order 35 is late and the customer wants a refund. The shipment for order 36 is late and the customer wants a refund. The shipment for order 37 is late and the customer wants a refund. The shipment for order 38 is late and the customer wants a refund. The shipment for order 39 is late and the customer wants a refund. The shipment for order 40 is late and the customer wants a refund. The shipment for order 41 is late and the customer wants a refund. The shipment for order 42 is late and the customer wants a refund. The shipment for order 43 is late and the customer wants a refund. The shipment for order 44 is late and the customer wants a refund. The shipment for order 45 is late and the customer wants a refund. The shipment for order 46 is late and the customer wants a refund. The shipment for order 47 is late and the customer wants a refund. The shipment for order 48 is late and the customer wants a refund. The shipment for order 49 is late and the customer wants a refund. The shipment for order 50 is late and the customer wants a refund. The shipment for order 51 is late and the customer wants a refund. The shipment for order 52 is late and the customer wants a refund. The shipment for order 53 is late and the customer wants a refund. The shipment for order 54 is late and the customer wants a refund. The shipment for order 55 is late and the customer wants a refund. The shipment for order 56 is late and the customer wants a refund. The shipment for order 57 is late and the customer wants a refund. The shipment for order 58 is late and the customer wants a refund. The shipment for order 59 is late and the customer wants a refund. The shipment for order 60 is late and the customer wants a refund. The shipment for order 61 is late and the customer wants a refund. The shipment for order 62 is late and the customer wants a refund. The shipment for order 63 is late and the customer wants a refund. The shipment for order 64 is late and the customer wants a refund. The shipment for order 65 is late and the customer wants a refund. The shipment for order 66 is late and the customer wants a refund. The shipment for order 67 is late and the customer wants a refund. The shipment for order 68 is late and the customer wants a refund. The shipment for order 69 is late and the customer wants a refund. The shipment for order 70 is late and the customer wants a refund. The shipment for order 71 is late and the customer wants a refund. The shipment for order 72 is late and the customer wants a refund. The shipment for order 73 is late and the customer wants a refund. The shipment for order 74 is late and the customer wants a refund. The shipment for order 75 is late and the customer wants a refund. The shipment for order 76 is late and the customer wants a refund. The shipment for order 77 is late and the customer wants a refund. The shipment for order 78 is late and the customer wants a refund. The shipment for order 79 is late and the customer wants a refund. The shipment for order 80 is late and the customer wants a refund. The shipment for order 81 is late and the customer wants a refund. The shipment for order 82 is late and the customer wants a refund. The shipment for order 83 is late and the customer wants a refund. The shipment for order 84 is late and the customer wants a refund. The shipment for order 85 is late and the customer wants a refund. The shipment for order 86 is late and the customer wants a refund. The shipment for order 87 is late and the customer wants a refund. The shipment for order 88 is late and the customer wants a refund. The shipment for order 89 is late and the customer wants a refund. The shipment for order 90 is late and the customer wants a refund. The shipment for order 91 is late and the customer wants a refund. The shipment for order 92 is late and the customer wants a refund. The shipment for order 93 is late and the customer wants a refund. The shipment for order 94 is late and the customer wants a refund. The shipment for order 95 is late and the customer wants a refund. The shipment for order 96 is late and the customer wants a refund. The shipment for order 97 is late and the customer wants a refund. The shipment for order 98 is late and the customer wants a refund. The shipment for order 99 is late and the customer wants a refund. The shipment for order 100 is late and the customer wants a refund. The shipment for order 101 is late and the customer wants a refund. The shipment for order 102 is late and the customer wants a refund. The shipment for order 103 is late and the customer wants a refund. The shipment for order 104 is late and the customer wants a refund. The shipment for order 105 is late and the customer wants a refund. The shipment for order 106 is late and the customer wants a refund. The shipment for order 107 is late and the customer wants a refund. The shipment for order 108 is late and the customer wants a refund. The shipment for order 109 is late and the customer wants a refund. The shipment for order 110 is late and the customer wants a refund. The shipment for order 111 is late and the customer wants a refund. The shipment for order 112 is late and the customer wants a refund. The shipment for order 113 is late and the customer wants a refund. The shipment for order 114 is late and the customer wants a refund. The shipment for order 115 is late and the customer wants a refund. The shipment for order 116 is late and the customer wants a refund. The shipment for order 117 is late and the customer wants a refund. The shipment for order 118 is late and the customer wants a refund. The shipment for order 119 is late and the customer wants a refund. The shipment for order 120 is late and the customer wants a refund. The shipment for order 121 is late and the customer wants a refund. The shipment for order 122 is late and the customer wants a refund. The shipment for order 123 is late and the customer wants a refund. The shipment for order 124 is late and the customer wants a refund. The shipment for order 125 is late and the customer wants a refund. The shipment for order 126 is late and the customer wants a refund. The shipment for order 127 is late and the customer wants a refund. The shipment for order 128 is late and the customer wants a refund. The shipment for order 129 is late and the customer wants a refund. The shipment for order 130 is late and the customer wants a refund. The shipment for order 131 is late and the customer wants a refund. The shipment for order 132 is late and the customer wants a refund. The shipment for order 133 is late and the customer wants a refund. The shipment for order 134 is late and the customer wants a refund. The shipment for order 135 is late and the customer wants a refund. The shipment for order 136 is late and the customer wants a refund. The shipment for order 137 is late and the customer wants a refund. The shipment for order 138 is late and the customer wants a refund. The shipment for order 139 is late and the customer wants a refund. The shipment for order 140 is late and the customer wants a refund. The shipment for order 141 is late and the customer wants a refund. The shipment for order 142 is late and the customer wants a refund. The shipment for order 143 is late and the customer wants a refund. The shipment for order 144 is late and the customer wants a refund. The shipment for order 145 is late and the customer wants a refund. The shipment for order 146 is late and the customer wants a refund. The shipment for order 147 is late and the customer wants a refund. The shipment for order 148 is late and the customer wants a refund. The shipment for order 149 is late and the customer wants a refund. The shipment for order 150 is late and the customer wants a refund. The shipment for order 151 is late and the customer wants a refund. The shipment for order 152 is late and the customer wants a refund. The shipment for order 153 is late and the customer wants a refund. The shipment for order 154 is late and the customer wants a refund. The shipment for order 155 is late and the customer wants a refund. The shipment for order 156 is late and the customer wants a refund. The shipment for order 157 is late and the customer wants a refund. The shipment for order 158 is late and the customer wants a refund. The shipment for order 159 is late and the customer wants a refund. The shipment for order 160 is late and the customer wants a refund. The shipment for order 161 is late and the customer wants a refund. The shipment for order 162 is late and the customer wants a refund. The shipment for order 163 is late and the customer wants a refund. The shipment for order 164 is late and the customer wants a refund. The shipment for order 165 is late and the customer wants a refund. The shipment for order 166 is late and the customer wants a refund. The shipment for order 167 is late and the customer wants a refund. The shipment for order 168 is late and the customer wants a refund. The shipment for order 169 is late and the customer wants a refund. The shipment for order 170 is late and the customer wants a refund. The shipment for order 171 is late and the customer wants a refund. The shipment for order 172 is late and the customer wants a refund. The shipment for order 173 is late and the customer wants a refund. The shipment for order 174 is late and the customer wants a refund. The shipment for order 175 is late and the customer wants a refund. The shipment for order 176 is late and the customer wants a refund. The shipment for order 177 is late and the customer wants a refund. The shipment for order 178 is late and the customer wants a refund. The shipment for order 179 is late and the customer wants a refund. The shipment for order 180 is late and the customer wants a refund. The shipment for order 181 is late and the customer wants a refund. The shipment for order 182 is late and the customer wants a refund. The shipment for order 183 is late and the customer wants a refund. The shipment for order 184 is late and the customer wants a refund. The shipment for order 185 is late and the customer wants a refund. The shipment for order 186 is late and the customer wants a refund. The shipment for order 187 is late and the customer wants a refund. The shipment for order 188 is late and the customer wants a refund. The shipment for order 189 is late and the customer wants a refund. The shipment for order 190 is late and the customer wants a refund. The shipment for order 191 is late and the customer wants a refund. The shipment for order 192 is late and the customer wants a refund. The shipment for order 193 is late and the customer wants a refund. The shipment for order 194 is late and the customer wants a refund. The shipment for order 195 is late and the customer wants a refund. The shipment for order 196 is late and the customer wants a refund. The shipment for order 197 is late and the customer wants a refund. The shipment for order 198 is late and the customer wants a refund. The shipment for order 199 is late and the customer wants a refund. The shipment for order 200 is late and the customer wants a refund. The shipment for order 201 is late and the customer wants a refund. The shipment for order 202 is late and the customer wants a refund. The shipment for order 203 is late and the customer wants a refund. The shipment for order 204 is late and the customer wants a refund. The shipment for order 205 is late and the customer wants a refund. The shipment for order 206 is late and the customer wants a refund. The shipment for order 207 is late and the customer wants a refund. The shipment for order 208 is late and the customer wants a refund. The shipment for order 209 is late and the customer wants a refund. The shipment for order 210 is late and the customer wants a refund. The shipment for order 211 is late and the customer wants a refund. The shipment for order 212 is late and the customer wants a refund. The shipment for order 213 is late and the customer wants a refund. The shipment for order 214 is late and the customer wants a refund. The shipment for order 215 is late and the customer wants a refund. The shipment for order 216 is late and the customer wants a refund. The shipment for order 217 is late and the customer wants a refund. The shipment for order 218 is late and the customer wants a refund. The shipment for order 219 is late and the customer wants a refund. The shipment for order 220 is late and the customer wants a refund. The shipment for order 221 is late and the customer wants a refund. The shipment for order 222 is late and the customer wants a refund. The shipment for order 223 is late and the customer wants a refund. The shipment for order 224 is late and the customer wants a refund. The shipment for order 225 is late and the customer wants a refund. The shipment for order 226 is late and the customer wants a refund. The shipment for order 227 is late and the customer wants a refund. The shipment for order 228 is late and the customer wants a refund. The shipment for order 229 is late and the customer wants a refund. The shipment for order 230 is late and the customer wants a refund. The shipment for order 231 is late and the customer wants a refund. The shipment for order 232 is late and the customer wants a refund. The shipment for order 233 is late and the customer wants a refund. The shipment for order 234 is late and the customer wants a refund. The shipment for order 235 is late and the customer wants a refund. The shipment for order 236 is late and the customer wants a refund. The shipment for order 237 is late and the customer wants a refund. The shipment for order 238 is late and the customer wants a refund. The shipment for order 239 is late and the customer wants a refund. The shipment for order 240 is late and the customer wants a refund. The shipment for order 241 is late and the customer wants a refund. The shipment for order 242 is late and the customer wants a refund. The shipment for order 243 is late and the customer wants a refund. The shipment for order 244 is late and the customer wants a refund. The shipment for order 245 is late and the customer wants a refund. The shipment for order 246 is late and the customer wants a refund. The shipment for order 247 is late and the customer wants a refund. The shipment for order 248 is late and the customer wants a refund. The shipment for order 249 is late and the customer wants a refund. The shipment for order 250 is late and the customer wants a refund. The shipment for order 251 is late and the customer wants a refund. The shipment for order 252 is late and the customer wants a refund. The shipment for order 253 is late and the customer wants a refund. The shipment for order 254 is late and the customer wants a refund. The shipment for order 255 is late and the customer wants a refund. The shipment for order 256 is late and the customer wants a refund. The shipment for order 257 is late and the customer wants a refund. The shipment for order 258 is late and the customer wants a refund. The shipment for order 259 is late and the customer wants a refund. The shipment for order 260 is late and the customer wants a refund. The shipment for order 261 is late and the customer wants a refund. The shipment for order 262 is late and the customer wants a refund. The shipment for order 263 is late and the customer wants a refund. The shipment for order 264 is late and the customer wants a refund. The shipment for order 265 is late and the customer wants a refund. The shipment for order 266 is late and the customer wants a refund. The shipment for order 267 is late and the customer wants a refund. The shipment for order 268 is late and the customer wants a refund. The shipment for order 269 is late and the customer wants a refund. The shipment for order 270 is late and the customer wants a refund. The shipment for order 271 is late and the customer wants a refund. The shipment for order 272 is late and the customer wants a refund. The shipment for order 273 is late and the customer wants a refund. The shipment for order 274 is late and the customer wants a refund. The shipment for order 275 is late and the customer wants a refund. The shipment for order 276 is late and the customer wants a refund. The shipment for order 277 is late and the customer wants a refund. The shipment for order 278 is late and the customer wants a refund. The shipment for order 279 is late and the customer wants a refund. The shipment for order 280 is late and the customer wants a refund. The shipment for order 281 is late and the customer wants a refund. The shipment for order 282 is late and the customer wants a refund. The shipment for order 283 is late and the customer wants a refund. The shipment for order 284 is late and the customer wants a refund. The shipment for order 285 is late and the customer wants a refund. The shipment for order 286 is late and the customer wants a refund. The shipment for order 287 is late and the customer wants a refund. The shipment for order 288 is late and the customer wants a refund. The shipment for order 289 is late and the customer wants a refund. The shipment for order 290 is late and the customer wants a refund. The shipment for order 291 is late and the customer wants a refund. The shipment for order 292 is late and the customer wants a refund. The shipment for order 293 is late and the customer wants a refund. The shipment for order 294 is late and the customer wants a refund. The shipment for order 295 is late and the customer wants a refund. The shipment for order 296 is late and the customer wants a refund. The shipment for order 297 is late and the customer wants a refund. The shipment for order 298 is late and the customer wants a refund. The shipment for order 299 is late and the customer wants a refund.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "en",
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "emoji_only",
+   "state": "😀🎉👍",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "no letters detected in state; using default (english)",
+    "detection": {
+     "script": "unknown",
+     "script_profile": {},
+     "language": null,
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "typed_workflow_ids",
+   "state": "Invoice 4411 does not match the purchase order and looks like a duplicate.",
+   "questions": {
+    "department": {
+     "type": "choice",
+     "instructions": "x",
+     "criteria": [
+      "a",
+      "b"
+     ]
+    },
+    "urgency": {
+     "type": "score",
+     "instructions": "x",
+     "criteria": [
+      "lo",
+      "hi"
+     ]
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "en",
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": null
+   }
+  },
+  {
+   "name": "english_email/invoice/auto",
+   "state": {
+    "from": "user@acme.com",
+    "subject": "Duplicate charge",
+    "body": "Hi, we were billed twice for March. Please refund the duplicate today or we will cancel our plan."
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": true,
+   "overrides": {},
+   "decision": {
+    "model": "typed-decisions",
+    "repo": [
+     "convaiinnovations/laya",
+     "typed-decisions"
+    ],
+    "reason": "question ids match the 'invoice_processing' typed-decisions workflow",
+    "detection": null,
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "english_email/invoice",
+   "state": {
+    "from": "user@acme.com",
+    "subject": "Duplicate charge",
+    "body": "Hi, we were billed twice for March. Please refund the duplicate today or we will cancel our plan."
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "en",
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "hindi/invoice/auto",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": true,
+   "overrides": {},
+   "decision": {
+    "model": "typed-decisions",
+    "repo": [
+     "convaiinnovations/laya",
+     "typed-decisions"
+    ],
+    "reason": "question ids match the 'invoice_processing' typed-decisions workflow",
+    "detection": null,
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "hindi/invoice",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "non-Latin script (devanagari, 100% of letters); the English checkpoint cannot read it",
+    "detection": {
+     "script": "devanagari",
+     "script_profile": {
+      "devanagari": 1.0
+     },
+     "language": null,
+     "is_english": false,
+     "non_latin_fraction": 1.0
+    },
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "digits_only/invoice/auto",
+   "state": "4411 #8812 --- 2026",
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": true,
+   "overrides": {},
+   "decision": {
+    "model": "typed-decisions",
+    "repo": [
+     "convaiinnovations/laya",
+     "typed-decisions"
+    ],
+    "reason": "question ids match the 'invoice_processing' typed-decisions workflow",
+    "detection": null,
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "digits_only/invoice",
+   "state": "4411 #8812 --- 2026",
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "no letters detected in state; using default (english)",
+    "detection": {
+     "script": "unknown",
+     "script_profile": {},
+     "language": null,
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "typed_workflow_ids/invoice/auto",
+   "state": "Invoice 4411 does not match the purchase order and looks like a duplicate.",
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": true,
+   "overrides": {},
+   "decision": {
+    "model": "typed-decisions",
+    "repo": [
+     "convaiinnovations/laya",
+     "typed-decisions"
+    ],
+    "reason": "question ids match the 'invoice_processing' typed-decisions workflow",
+    "detection": null,
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "typed_workflow_ids/invoice",
+   "state": "Invoice 4411 does not match the purchase order and looks like a duplicate.",
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {},
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "English Latin text",
+    "detection": {
+     "script": "latin",
+     "script_profile": {
+      "latin": 1.0
+     },
+     "language": "en",
+     "is_english": true,
+     "non_latin_fraction": 0.0
+    },
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "override:{\"model\": \"ml\"}",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {
+    "model": "ml"
+   },
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "explicit model='ml'",
+    "detection": null,
+    "workflow": null
+   }
+  },
+  {
+   "name": "override:{\"model\": \"typed_decisions\"}",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {
+    "model": "typed_decisions"
+   },
+   "decision": {
+    "model": "typed-decisions",
+    "repo": "convaiinnovations/laya/typed-decisions",
+    "reason": "explicit model='typed_decisions'",
+    "detection": null,
+    "workflow": null
+   }
+  },
+  {
+   "name": "override:{\"task\": \"typed-decisions\"}",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {
+    "task": "typed-decisions"
+   },
+   "decision": {
+    "model": "typed-decisions",
+    "repo": "convaiinnovations/laya/typed-decisions",
+    "reason": "explicit task='typed-decisions'",
+    "detection": null,
+    "workflow": null
+   }
+  },
+  {
+   "name": "override:{\"task\": \"en\"}",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {
+    "task": "en"
+   },
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "explicit task='en'",
+    "detection": null,
+    "workflow": null
+   }
+  },
+  {
+   "name": "override:{\"lang\": \"en-GB\"}",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {
+    "lang": "en-GB"
+   },
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "explicit lang='en-GB'",
+    "detection": null,
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "override:{\"lang\": \"hi\"}",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {
+    "lang": "hi"
+   },
+   "decision": {
+    "model": "multilingual",
+    "repo": "convaiinnovations/laya/multilingual",
+    "reason": "explicit lang='hi'",
+    "detection": null,
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "override:{\"lang\": \"English\"}",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {
+    "lang": "English"
+   },
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "explicit lang='English'",
+    "detection": null,
+    "workflow": "invoice_processing"
+   }
+  },
+  {
+   "name": "override:{\"model\": \"en\", \"lang\": \"hi\"}",
+   "state": {
+    "body": "मुझसे दो बार शुल्क लिया गया, कृपया पैसे वापस करें।"
+   },
+   "questions": {
+    "discrepancy_severity": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "disposition": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "duplicate": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "matches_order": {
+     "type": "noul",
+     "instructions": "x"
+    },
+    "urgency": {
+     "type": "noul",
+     "instructions": "x"
+    }
+   },
+   "auto": false,
+   "overrides": {
+    "model": "en",
+    "lang": "hi"
+   },
+   "decision": {
+    "model": "english",
+    "repo": "convaiinnovations/laya",
+    "reason": "explicit model='en'",
+    "detection": null,
+    "workflow": null
+   }
+  }
+ ]
+}
